@@ -2,6 +2,8 @@ class Dictim < Formula
   desc "Diagram-as-data library for converting between dictim syntax and D2/Graphviz formats"
   homepage "https://github.com/judepayne/dictim"
   version "0.9.0.4"
+
+  depends_on "d2" => "~> 0.7.0"
   
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/judepayne/dictim/releases/download/v0.9.0.4/dictim-0.9.0.4-macos-aarch64.zip"
