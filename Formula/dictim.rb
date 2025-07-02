@@ -7,16 +7,16 @@ class Dictim < Formula
   
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/judepayne/dictim/releases/download/v0.9.0.4/dictim-0.9.0.4-macos-aarch64.zip"
-    sha256 "d467892219398c1101f1e366ebad70ea1d97ae682262f2cf6f50920d383dd05d"
+    sha256 "1842fe5c64d6c3f6d0f060db0706433196aa3a4bad5a132c89aa99c94cf75004"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/judepayne/dictim/releases/download/v0.9.0.4/dictim-0.9.0.4-macos-amd64.zip"
     sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/judepayne/dictim/releases/download/v0.9.0.4/dictim-0.9.0.4-linux-aarch64.zip"
-    sha256 "adfa1dc80b0ddaf58d5e4833c1e1023d30632e2c95db936001d8c0278aa743a1"
+    sha256 "93d6e2ff635d200def8191183a5a5b7dce658f13f7cd9003ee562343a2922c33"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/judepayne/dictim/releases/download/v0.9.0.4/dictim-0.9.0.4-linux-amd64.zip"
-    sha256 "ee1ce3fb8d19094f10cd52f0e0255504306362e08766b16328cc325a1e9ab374"
+    sha256 "fea3bc7b06eb3ff3f9f141cda2c41fd36c6854040133d3fd8858bbaf57a82e10"
   end
 
   def install
