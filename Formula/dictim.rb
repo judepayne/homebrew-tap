@@ -7,13 +7,13 @@ class Dictim < Formula
   
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/judepayne/dictim/releases/download/0.9.4/dict-0.9.4-macos-aarch64.zip"
-    sha256 "a4f2443403bddee41f0c6765effa1666f5d3b6c5aebca35bdc9479db11b2d1b4"
+    sha256 "71ee903e69f680b187aa45fd286816ed8cd0b988d00337a9a14a30d697f6fc09"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/judepayne/dictim/releases/download/0.9.4/dict-0.9.4-linux-aarch64.zip"
-    sha256 "166d66d9ee7ac397feda9e53481382ebbde5fd5ef946c0b97ca408dfb3289901"
+    sha256 "01211ea1d9ee3547e5769a67f98ad5b2ba09af7f683383179eae5ee7f02ba9cf"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/judepayne/dictim/releases/download/0.9.4/dict-0.9.4-linux-amd64.zip"
-    sha256 "b7cedf5f5318183d2fb87e1db9be847b3fe0e7be0ef756a39aad922f5fe50596"
+    sha256 "5f4d34dcf0a3f83f56e2b65dce8d13bf06675c0700ad5cd29741531102174c22"
   end
 
   def install
