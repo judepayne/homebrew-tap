@@ -1,19 +1,19 @@
 class Dictim < Formula
   desc "Diagram-as-data library for converting between dictim syntax and D2/Graphviz formats"
   homepage "https://github.com/judepayne/dictim"
-  version "0.9.3"
+  version "0.9.4"
 
   depends_on "d2" => "~> 0.7.0"
   
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/judepayne/dictim/releases/download/0.9.3/dict-0.9.3-macos-aarch64.zip"
-    sha256 "76ced76665fff36f297f3f86f690df22291218574b7d2bed55c1d2f5b982e3a9"
+    url "https://github.com/judepayne/dictim/releases/download/0.9.4/dict-0.9.4-macos-aarch64.zip"
+    sha256 "a4f2443403bddee41f0c6765effa1666f5d3b6c5aebca35bdc9479db11b2d1b4"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/judepayne/dictim/releases/download/0.9.3/dict-0.9.3-linux-aarch64.zip"
-    sha256 "f9ed296826b55aeafe754541e4a58dfbc1c55200a22ce8f2db514a80fca3fb32"
+    url "https://github.com/judepayne/dictim/releases/download/0.9.4/dict-0.9.4-linux-aarch64.zip"
+    sha256 "166d66d9ee7ac397feda9e53481382ebbde5fd5ef946c0b97ca408dfb3289901"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/judepayne/dictim/releases/download/0.9.3/dict-0.9.3-linux-amd64.zip"
-    sha256 "7cf653e18b5717639cef71dc1ec7030ba78c774920c71758936c57786f3beda1"
+    url "https://github.com/judepayne/dictim/releases/download/0.9.4/dict-0.9.4-linux-amd64.zip"
+    sha256 "b7cedf5f5318183d2fb87e1db9be847b3fe0e7be0ef756a39aad922f5fe50596"
   end
 
   def install
